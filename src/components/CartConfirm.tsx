@@ -65,7 +65,7 @@ export default function CartConfirm({
                       <div className="flex items-center justify-between py-4 border-b-1 border-gray-100 mx-4">
                         <div className="flex">
                           <img
-                            src={"src/" + specificData[0].image.thumbnail}
+                            src={specificData[0].image.thumbnail}
                             className="w-[50px] h-[50px] rounded-sm mr-2"
                             alt={specificData[0].name}
                           />

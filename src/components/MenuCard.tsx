@@ -21,13 +21,17 @@ import "./MenuCard.css";
 import svg from "../assets/images/icon-add-to-cart.svg";
 import minus from "../assets/images/icon-decrement-quantity.svg";
 import plus from "../assets/images/icon-increment-quantity.svg";
+import { useEffect } from "react";
 
 const MenuCard = (props: MenuCardType) => {
+  useEffect(() => {
+    const res = fetch("");
+  }, []);
   return (
     <>
       <div className="container">
         <img
-          src={"src/" + props.image.desktop}
+          src={props.image.desktop}
           alt={props.name}
           className={
             props.value == 0
